@@ -2,11 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
 h1 {
   font-size: 40px;
   text-align: center;
   color: #47C0E5;
-  margin-top: 60px;
+  margin-top: 100px;
   clear: both;
 }
 
@@ -17,20 +30,16 @@ h2 {
   margin-top: 40px;
 }
 
-.about {
-  margin-bottom: 550px;
-}
-
-.add-p {
-  margin-bottom: 300px;
-}
-
-nav .nav-section {
+nav {
   height: 50px;
   background-color: #002632;
+  position: fixed;
+  top: 0;
+  left:0;
 }
 
 nav ul {
+    margin-top: 5px;
     list-style-type: none;
 }
 
@@ -38,21 +47,21 @@ nav li {
     display: inline-block;
     float: right;
     margin: 10px 10px;
-    text-decoration: none;
 }
 
-nav li a {
-
+nav a:link,
+nav a:visited {
   text-decoration: none;
   color: #47C0E5;
   font-weight: bolder;
   font-size: 20px;
 }
 
-nav li a:hover,
-nav li a:hover {
+nav a:hover,
+nav a:active {
   color: #5FC325;
   text-decoration: none;
+  background-color: transparent;
 }
 
 .address {
@@ -78,5 +87,9 @@ nav li a:hover {
 }
 
 footer {
-  text-align: center;
+  font-size: 50%;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -60px;
 }

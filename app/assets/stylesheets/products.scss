@@ -1,3 +1,83 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+th,
+td {
+  font-size: 80%;
+  padding: 10px;
+}
+
+.new:link,
+.new:visited {
+  display: inline-block;
+  margin: 10px;
+  color: black !important;
+}
+
+.new:hover,
+.new:active {
+  color: #5FC325 !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.actions {
+  margin: 40px 0px 40px 0px;
+  font-size: 80%;
+}
+
+.actions input {
+  background-color: #47C0E5;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form {
+  margin: 10px 10px 40px 10px;
+}
+
+.back:link,
+.back:visited,
+.edit:link,
+.edit:visited,
+.show:link,
+.show:visited {
+  display: inline-block;
+  margin: 10px;
+  color: black !important;
+}
+
+.edit:link,
+.edit:visited {
+  margin-left : 0px;
+}
+
+.back:hover,
+.back:active,
+.edit:hover,
+.edit:active,
+.show:hover,
+.show:active {
+  color: #5FC325 !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.edit-product:link,
+.edit-product:visited {
+  margin: 10px;
+  color: black !important;
+}
+
+.edit-product:hover,
+.edit-product:active {
+  color: #5FC325 !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.notice {
+  margin: 80px 20px 20px 20px;
+}
