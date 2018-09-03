@@ -2,29 +2,49 @@
 
 <h1>Products</h1>
 
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-xs-12 col-md-3 box">
+        <%= image_tag(product.image_url, class: "img-fluid") unless product.image_url.nil? %>
+        <h6><%= product.name %></h6>
+        <p><%= product.description %></p>
+        <p><%= product.color %></p>
+        <p class="price"><strong>£<%= product.price %></strong></p>
+        <a><%= link_to 'Show', product, :class => "edit-product" %></a>
+        <a><%= link_to 'Edit', edit_product_path(product), :class => "edit-product" %></a>
+        <a><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, :class => "edit-product" %></a>
+      </div><!-- /col -->
+    <% end %>
+  </div>
+</div>
+
+<!--
 <table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Description</th>
       <th>Image url</th>
+      <th>Color</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
+      <tr class="product-description">
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
+        <td><%= product.color %></td>
         <td><%= link_to 'Show', product, :class => "edit-product" %></td>
         <td><%= link_to 'Edit', edit_product_path(product), :class => "edit-product" %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, :class => "edit-product" %></td>
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
 <br>
 

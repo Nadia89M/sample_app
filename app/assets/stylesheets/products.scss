@@ -11,8 +11,12 @@ td {
 .new:link,
 .new:visited {
   display: inline-block;
-  margin: 10px;
-  color: black !important;
+  margin: 40px;
+  color: white !important;
+  border: 1px solid #5FC325;
+  background-color: #5FC325;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .new:hover,
@@ -23,7 +27,7 @@ td {
 }
 
 .actions {
-  margin: 40px 0px 40px 0px;
+  margin: 40px 0px;
   font-size: 80%;
 }
 
@@ -69,6 +73,7 @@ form {
 .edit-product:visited {
   margin: 10px;
   color: black !important;
+  font-size: 70%;
 }
 
 .edit-product:hover,
@@ -80,4 +85,33 @@ form {
 
 .notice {
   margin: 80px 20px 20px 20px;
+}
+
+.box {
+  border: 1px solid black;
+  margin: 20px 40px;
+  padding: 10px;
+}
+
+.box p {
+  margin: 15px 0px;
+}
+
+.price {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.box h6 {
+  color: #5FC325;
+}
+
+.box .img-fluid {
+  display: block;
+  height: 250px;
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #002632;
 }
