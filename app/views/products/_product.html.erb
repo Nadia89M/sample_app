@@ -1,0 +1,12 @@
+<% @products.each do |product| %>
+  <div class="col-xs-12 col-md-3 box">
+    <%= image_tag(product.image_url, class: "img-fluid") unless product.image_url.nil? %>
+    <h6><%= product.name %></h6>
+    <p><%= product.description %></p>
+    <p><%= product.colour %></p>
+    <p class="price"><strong>£<%= product.price %></strong></p>
+    <a><%= link_to 'Show', product, :class => "edit-product" %></a>
+    <a><%= link_to 'Edit', edit_product_path(product), :class => "edit-product" %></a>
+    <a><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, :class => "edit-product" %></a>
+  </div><!-- /col -->
+<% end %>
