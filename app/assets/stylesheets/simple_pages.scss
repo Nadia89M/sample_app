@@ -30,39 +30,119 @@ h2 {
   margin-top: 40px;
 }
 
-nav {
+/*Navigation Bar*/
+
+.nav {
   height: 50px;
+  width: 100%;
   background-color: #002632;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 9999;
 }
 
-nav ul {
-    margin-top: 5px;
-    list-style-type: none;
+.nav-title {
+
+  a:link,
+  a:visited {
+    color: #5FC325;
+    font-size: 90%;
+  }
+
+  a:hover,
+  a:active {
+    color: #47C0E5;
+    background-color: #002632;
+  }
 }
 
-nav li {
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.nav > .nav-links > a {
+
+  &:link,
+  &:visited {
     display: inline-block;
-    float: right;
-    margin: 10px 10px;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #47C0E5;
+  }
+
+  &:hover,
+  &:active {
+    color: #5FC325;
+    background-color: #002632;
+  }
 }
 
-nav a:link,
-nav a:visited {
-  text-decoration: none;
-  color: #47C0E5;
-  font-weight: bolder;
-  font-size: 20px;
+.nav > #nav-check {
+  display: none;
 }
 
-nav a:hover,
-nav a:active {
-  color: #5FC325;
-  text-decoration: none;
-  background-color: transparent;
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: #002632;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #47C0E5;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #E5E4EA;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
 }
 
 .carousel-caption {
@@ -111,3 +191,7 @@ footer {
 .carousel-indicators .active {
   background-color: #47C0E5;
 }*/
+
+.jumbotron h1{
+  margin-top: 0 !important;
+}

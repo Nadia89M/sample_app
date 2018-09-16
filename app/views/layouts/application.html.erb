@@ -15,19 +15,30 @@
   </head>
 
   <body>
-    <nav class="nav-section container-fluid">
-      <ul>
-        <li>
-          <a class="link"><%= link_to "Contact", simple_pages_contact_path %></a>
-        </li>
-        <li>
-          <a class="link"><%= link_to "About", simple_pages_about_path %></a>
-        </li>
-        <li>
-          <a class="link"><%= link_to "Home", root_path %></a>
-        </li>
-      </ul>
-    </nav>
+
+    <div class="nav">
+      <div class="nav-header">
+        <div class="nav-title">
+          <%= link_to 'Bike Berlin', root_path, :class => "navbar-brand" %>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-links ml-auto">
+        <%= link_to 'Home', root_path, :class => "home" %>
+        <%= link_to 'About', simple_pages_about_path %>
+        <%= link_to 'Contact', simple_pages_contact_path %>
+        <%= link_to 'Products', products_path %>
+        <%= link_to 'New', new_product_path %>
+
+      </div>
+    </div>
 
     <%= yield %>
 
