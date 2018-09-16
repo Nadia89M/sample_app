@@ -36,7 +36,12 @@
         <%= link_to 'Contact', simple_pages_contact_path %>
         <%= link_to 'Products', products_path %>
         <%= link_to 'New', new_product_path %>
-
+      </div>
+      <div class"form-inline ml-auto">
+        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+        <%= form.text_field :q, id: 'q', value: params[:q], :class => "search-field", :type => "search", :placeholder => "Search", :ariaLabel => "Search"  %>
+        <%= form.submit 'Search', :class => "search" %>
+        <% end %>
       </div>
     </div>
 

@@ -99,6 +99,27 @@ h2 {
   display: none;
 }
 
+.search {
+  background-color: #47C0E5;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 80%;
+}
+
+.search:hover {
+  background-color: #5FC325;
+}
+
+.search-field {
+  border-radius: 5px;
+}
+
+.search-field:focus {
+  outline: none;
+}
+
 @media (max-width:600px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -143,6 +164,12 @@ h2 {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+
+.search-field,
+.search {
+  display: none;
+}
+
 }
 
 .carousel-caption {
