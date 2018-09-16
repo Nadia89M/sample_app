@@ -1,7 +1,27 @@
 <h1>Contact Us</h1>
-<h3 class="address address-top">Address</h3>
+<!--<h3 class="address address-top">Address</h3>
 <p class="address">Lützowplatz 17, 10785 Berlin, Germany</p>
 <h3 class="address">Phone number</h3>
 <p class="address">+49 (30) 26050</p>
 <h3 class="address">Email</h3>
-<p class="address add-p">info@bike-berlin.de</p>
+<p class="address add-p">info@bike-berlin.de</p>-->
+
+<%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="row">
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+  </div>
+</div>
+<%= form.submit "Send", class: "form_label" %>
+<% end %>
