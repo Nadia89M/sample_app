@@ -50,10 +50,16 @@
       </div>
     </div>
 
+    <% if notice %>
+      <p id="notice" class="notice alert alert-primary"><%= notice %></p>
+    <% end %>
+
+
     <%= yield %>
 
     <footer class="container-fluid">
       &copy; 2018 Bike Berlin
     </footer>
+
   </body>
 </html>

@@ -1,6 +1,8 @@
 <h1>Contact Us</h1>
 
-<%= flash[:notice] %>
+<% if notice %>
+  <p id="notice" class="notice alert alert-primary"><%= notice %></p>
+<% end %>
 
 <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
 <div class="row">
