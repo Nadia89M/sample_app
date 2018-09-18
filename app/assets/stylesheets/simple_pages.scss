@@ -11,6 +11,7 @@
 body,
 html {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   font-size: 25px;
 }
@@ -28,6 +29,10 @@ h2 {
   text-align: center;
   color: #5FC325;
   margin-top: 40px;
+}
+
+.welcome {
+  text-align: center;
 }
 
 /*Navigation Bar*/
@@ -246,4 +251,70 @@ footer {
 
 .card {
   margin: 100px;
+}
+
+/*Device*/
+
+.remember {
+  padding: 10px 0;
+  font-size: 80%;
+}
+
+.btm-link:link,
+.btm-link:visited {
+  background-color: #5FC325;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 80%;
+  margin: 10px;
+  display: inline-block;
+  color: white;
+}
+
+.btm-link:hover,
+.btm-link:active {
+  text-decoration: none;
+  background-color: #47C0E5;
+}
+
+.back:link,
+.back:visited {
+  display: inline-block;
+  margin: 10px;
+  color: black !important;
+}
+
+.back:hover,
+.back:active {
+  color: #5FC325 !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.unhappy {
+  margin-left: 10px;
+}
+
+.cancel {
+  background-color: #47C0E5;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 80%;
+  margin-top: 10px;
+}
+
+.cancel:hover {
+  background-color: #5FC325;
+}
+
+.field {
+  line-height: 1.5;
+  margin: 80px 0;
+  padding: 20px;
+  border: 1px solid #5FC325;
+  width: 50%;
 }
