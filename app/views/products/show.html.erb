@@ -1,34 +1,42 @@
-<div class="notice">
+
   <% if notice %>
     <p id="notice" class="notice alert alert-primary"><%= notice %></p>
   <% end %>
 
-  <p>
-    <strong>Name:</strong>
-    <%= @product.name %>
-  </p>
+<div class="card form">
+    <div class="card-head">
+      <%= image_tag(@product.image_url, class: "img-fluid box") unless @product.image_url.nil? %>
+    </div>
+    <div class="card-body">
 
-  <p>
-    <strong>Description:</strong>
-    <%= @product.description %>
-  </p>
+        <p>
+          <strong>Name:</strong>
+          <%= @product.name %>
+        </p>
 
-  <p>
-    <strong>Image url:</strong>
-    <%= @product.image_url %>
-  </p>
+        <p>
+          <strong>Description:</strong>
+          <%= @product.description %>
+        </p>
 
-  <p>
-    <strong>Color:</strong>
-    <%= @product.colour %>
-  </p>
+        <p>
+          <strong>Color:</strong>
+          <%= @product.colour %>
+        </p>
 
-  <p>
-    <strong>Price:</strong>
-    <%= @product.price %>
-  </p>
+        <p>
+          <strong>Price:</strong>
+          <%= @product.price %>
+        </p>
 
-<%= link_to 'Edit', edit_product_path(@product), :class => "edit" %> |
-<%= link_to 'Back', products_path, :class => "back" %>
+        <p>
+          <i class="far fa-comment-dots"></i>
+          <strong>Highest Rating Comment:</strong>
+          <%= @product.highest_rating_comment %>
+        </p>
+
+        <p><%= link_to 'Edit', edit_product_path(@product), :class => "edit" %> |
+        <%= link_to 'Back', products_path, :class => "back" %></p>
+    </div>
 
 </div>
