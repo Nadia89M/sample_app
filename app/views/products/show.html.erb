@@ -4,11 +4,12 @@
   <% end %>
 
 <div class="card form">
-    <div class="card-head">
-      <%= image_tag(@product.image_url, class: "img-fluid box") unless @product.image_url.nil? %>
+  <div class="row">
+    <div class="col-xs-12 col-md-4">
+      <%= image_tag(@product.image_url, class: "img-fluid") unless @product.image_url.nil? %>
     </div>
-    <div class="card-body">
-
+    <div class="col-xs-12 col-md-4">
+      <div class="description">
         <p>
           <strong>Name:</strong>
           <%= @product.name %>
@@ -29,14 +30,22 @@
           <%= @product.price %>
         </p>
 
-        <p>
-          <i class="far fa-comment-dots"></i>
-          <strong>Highest Rating Comment:</strong>
-          <%= @product.highest_rating_comment %>
-        </p>
+        <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
 
         <p><%= link_to 'Edit', edit_product_path(@product), :class => "edit" %> |
         <%= link_to 'Back', products_path, :class => "back" %></p>
+      </div>
     </div>
+    <div class="col-xs-12 col-md-4">
+      <p>
+        <%= render 'new_comment' %>
+      </p>
+
+    </div>
+  </div>
+  <div class="card-footer">
+    <%= render 'comments' %>
+  </div>
 
 </div>

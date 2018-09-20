@@ -116,11 +116,23 @@ form {
   background-color: #002632;
 }
 
+.description {
+  margin-left: 100px;
+}
+
 .form p:last-child {
   font-size: 110%;
 }
 
-.fa-comment-dots {
-  font-size: 200%;
-  color: #5FC325;
+.submit{
+  background-color: #47C0E5;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 80%;
+}
+
+.submit:hover {
+  background-color: #5FC325;
 }
