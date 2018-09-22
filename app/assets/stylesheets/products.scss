@@ -154,3 +154,17 @@ form {
   background-color: transparent;
   text-decoration: none;
 }
+
+.fa-ban:before {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.glyphicon:hover {
+  background-color: #F7F7F7;
+}
+
+.fa-ban:hover {
+  font-size: 120%;
+  color:red;
+}
