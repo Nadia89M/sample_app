@@ -136,3 +136,21 @@ form {
 .submit:hover {
   background-color: #5FC325;
 }
+
+.previous_page,
+.next_page,
+.pagination a,
+.pagination em {
+  display: inline-block;
+  margin: 10px;
+  color: black !important;
+}
+
+.previous_page:hover,
+.next_page:hover,
+.pagination a:hover,
+.pagination em:hover {
+  color: #5FC325 !important;
+  background-color: transparent;
+  text-decoration: none;
+}
