@@ -14,6 +14,7 @@ html {
   margin-bottom: 40px;
   padding: 0;
   font-size: 25px;
+  background-color: #E9ECEF;
 }
 
 h1 {
@@ -201,9 +202,8 @@ h2 {
 }
 
 .my-image {
-  height: 400px;
-  width: auto;
-  display: block;
+  max-width: 100%;
+  height: auto;
   margin: 50px auto;
 }
 
@@ -266,17 +266,36 @@ footer {
 .btm-link:visited {
   background-color: #5FC325;
   color: white;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid white;
   font-size: 80%;
   margin: 10px;
   display: inline-block;
   color: white;
+  margin-left: 20px;
 }
 
 .btm-link:hover,
 .btm-link:active {
+  text-decoration: none;
+  background-color: #47C0E5;
+}
+
+.actions input {
+  background-color: #5FC325;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 80%;
+  margin: 10px;
+  display: inline-block;
+  color: white;
+  font-size: 105%;
+}
+
+.actions input:hover {
   text-decoration: none;
   background-color: #47C0E5;
 }
