@@ -68,6 +68,8 @@ group :test do
   gem 'chromedriver-helper'
   #Rspec-rails is a testing framework for Rails
   gem 'rspec-rails', '~> 3.8'
+  #Writing Functional Tests
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
