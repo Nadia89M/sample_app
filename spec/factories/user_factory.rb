@@ -9,11 +9,11 @@ FactoryBot.define do
     admin false
   end
   factory :admin, class: User do
-  email
-  password "qwertyuiop"
-  first_name "Admin"
-  last_name "User"
-  admin true
-  id 1
-end
+    email
+    password "qwertyuiop"
+    first_name "Admin"
+    last_name "User"
+    admin true
+    id 1
+  end
 end
