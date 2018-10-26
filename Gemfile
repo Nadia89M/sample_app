@@ -32,6 +32,8 @@ gem 'will_paginate', '~> 3.1.1'
 gem 'stripe'
 #Elevatezoom
 gem 'elevatezoom-rails'
+#Dalli is a Ruby memcache client
+gem 'dalli'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
