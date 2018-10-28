@@ -1,7 +1,5 @@
 if Rails.env.production?
-  puts "production: #{ENV['REDIS_URL']}"
-  uri = URI.parse(ENV["REDIS_URL"])
+  $redis = Redis.new(url: ENV["REDIS_URL"])
 else
-  puts "not production"
-  uri = URI.parse("redis://localhost:6379")
+  $redis = Redis.new(host: 'localhost', port: 6379)
 end
