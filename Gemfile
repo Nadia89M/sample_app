@@ -34,6 +34,8 @@ gem 'stripe'
 gem 'elevatezoom-rails'
 #Dalli is a Ruby memcache client
 gem 'dalli'
+#redis-rails provides a full set of stores (Cache, Session, HTTP Cache) for Ruby on Rails.
+gem 'redis-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
