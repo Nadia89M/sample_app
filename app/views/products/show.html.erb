@@ -6,7 +6,7 @@
 <div class="card form">
   <div class="row"  data-product-id="<%= @product.id %>">
     <div class="col-xs-12 col-md-4">
-      <%= image_tag(@product.image_url, class: "img-fluid img-zoom", data_zoom_image: @product.image_url) unless @product.image_url.nil? %>
+      <%= image_tag(@product.image_url, class: "img-responsive img-fluid my-image img-zoom", data_zoom_image: @product.image_url) unless @product.image_url.nil? %>
     </div>
     <div class="col-xs-12 col-md-4">
       <div class="description">
@@ -42,13 +42,15 @@
         <%= link_to 'Back', products_path, :class => "back" %></p>
       </div>
     </div>
+
     <div class="col-xs-12 col-md-4">
       <p>
         <%= render 'new_comment' %>
       </p>
-
     </div>
+
   </div>
+
   <div class="card-footer">
     <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
     <%= render 'comments' %>

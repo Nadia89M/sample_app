@@ -8,6 +8,20 @@ td {
   padding: 10px;
 }
 
+.card {
+  margin: 0px !important;
+}
+
+.my-image {
+  max-width: 100%;
+  height: auto;
+  margin: 50px auto;
+}
+
+.description form {
+  margin-left: 0px;
+}
+
 .new:link,
 .new:visited {
   display: inline-block;
@@ -116,10 +130,6 @@ form {
   background-color: #002632;
 }
 
-.description {
-  margin-left: 100px;
-}
-
 .form p:last-child {
   font-size: 110%;
 }
@@ -167,4 +177,14 @@ form {
 .fa-ban:hover {
   font-size: 120%;
   color:red;
+}
+
+@media (max-width:600px) {
+  .pagination {
+    font-size: 50%;
+    .next_page,
+    .previous_page {
+      display: none;
+    }
+  }
 }
