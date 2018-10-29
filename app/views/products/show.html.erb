@@ -4,7 +4,7 @@
   <% end %>
 
 <div class="card form">
-  <div class="row">
+  <div class="row"  data-product-id="<%= @product.id %>">
     <div class="col-xs-12 col-md-4">
       <%= image_tag(@product.image_url, class: "img-fluid img-zoom", data_zoom_image: @product.image_url) unless @product.image_url.nil? %>
     </div>
