@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :product do
     name "Bike"
-    description "race bike"
+    description "Race Bike"
     image_url "bike1.jpg"
     created_at Time.now
     updated_at Time.now
