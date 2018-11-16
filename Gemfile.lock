@@ -132,7 +132,7 @@ GEM
     pg (0.21.0)
     public_suffix (3.0.3)
     puma (3.12.0)
-    rack (2.0.5)
+    rack (2.0.6)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.1)
@@ -278,6 +278,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   pg (~> 0.20)
   puma (~> 3.11)
+  rack (>= 2.0.6)
   rails (~> 5.2.1)
   rails-controller-testing
   redis-rails
@@ -298,4 +299,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.3
+   1.17.1
